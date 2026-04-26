@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
-"""
-ME571 Lab 1 - Bag plotting utility (fixed for pandas 2.x / matplotlib)
-Usage:  MPLBACKEND=Agg python3 plot_bag.py <bagfile.bag> <label>
-"""
+
 
 import sys
 import os
@@ -15,7 +12,6 @@ from bagpy import bagreader
 
 
 def arr(series):
-    """Convert a pandas Series to a plain numpy array (matplotlib-safe)."""
     return np.asarray(series)
 
 
