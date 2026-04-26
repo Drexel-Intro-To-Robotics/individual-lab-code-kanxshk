@@ -152,7 +152,6 @@ class TurtleBotController:
 def main():
     controller = TurtleBotController()
 
-    # Uncomment ONE task at a time:
     # controller.drive_circle(0.5)
     # controller.drive_square(0.5)
     controller.random_dance()
