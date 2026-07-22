@@ -12,7 +12,6 @@ class TurtleBotController:
     def __init__(self):
         rospy.init_node('turtlebot_controller', anonymous=False)
 
-        # --- Wait for sim clock (critical when Gazebo is running) ---
         rospy.loginfo("Waiting for /clock to start ticking...")
         while rospy.Time.now().to_sec() == 0 and not rospy.is_shutdown():
             rospy.sleep(0.01)
